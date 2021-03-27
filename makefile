@@ -11,9 +11,10 @@ README.md: guessinggame.sh
 deploy:
 	git config user.email "harshraj.rathore@gmail.com"
 	git config user.name "rathore287" 
+	git init
 	git add . 
 	git status 
 	git commit -m "CI-CD with makefile"
-	git push -f -q https://$(TOKEN)@github.com/victoriadrake/victoriadrake.github.io.git master
+	git remote add origin https://github.com/rathore287/unix-ci-cd.git
 clean:
 	rm README.md
