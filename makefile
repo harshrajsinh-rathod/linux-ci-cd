@@ -16,6 +16,7 @@ deploy:
 	git status 
 	git commit -m "CI-CD with makefile"
 	git remote set-url origin https://github.com/rathore287/unix-ci-cd.git
+	git pull
 	git push origin master
 clean:
 	rm README.md
